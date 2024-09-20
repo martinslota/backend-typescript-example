@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "dev": "concurrently 'tsc --watch' 'nodemon dist/index.js'",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +13,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.6",
     "typescript": "^5.6.2"
   }
 }
