@@ -3,7 +3,7 @@ import { createHandler } from "graphql-http/lib/use/express";
 import { buildSchema } from "graphql";
 
 // The root provides a resolver function for each API endpoint
-import { root } from "./resolvers";
+import { root } from "./resolvers/index.js";
 
 // Construct a schema, using GraphQL schema language
 const schema = buildSchema(`
